@@ -8,7 +8,7 @@ int main() {
 	 int a,b;
 	  cin>>n>>m;
 	  cin>>a>>b;
-	  if(__gcd(a,b)==__gcd(n,m))
+	  if(abs(__gcd(a,b))==abs(__gcd(n,m)))
 	  cout<<"yes"<<"\n";
 	 else
 	  cout<<"no"<<"\n";
