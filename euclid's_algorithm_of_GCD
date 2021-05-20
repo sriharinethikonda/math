@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,m;
+	cin>>n>>m;
+	int a=max(n,m);
+	int b=min(n,m);
+	while(a!=0){
+	    if(b>a){
+	        swap(a,b);
+	        a=a-b;
+	    }
+	    a=a-b;
+	   
+	}
+    if(a==0)
+        cout<<b<<" ";
+	return 0;
+}
